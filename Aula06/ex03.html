@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //para converter um string para number, posso usar:
+        //Number.parseInt(n) para numeros inteiros, sem o uso de virgula. EX:20
+        //Number.parseFloat(n) para numeros reais, uso de virgula. EX: 20.5
+        //Number(n) o programa idenfica automaticamente se é inteiro ou real
+        var n1 = Number(window.prompt('Digite um número')) //prompt retorna o valor colocado como string
+        var n2 = Number(window.prompt('Digite outro numero'))
+        var s = n1 + n2 
+        window.alert('A soma dos valores é'+ s) 
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)         
+        //(number + number) para adição
+        //(string + string) para concatenação 
+        //o + pode ser tanto adição quanto concatenação, por isso se atentar para as regras a cima
+
+        //agora para converter um number para string é simples, duas formas:
+        //String(n) o programa idenfica automaticamente e converte 
+        //n.toString(n) pode converter dps de ja ter recebido
+        //exemplo agora no comando: window.alert('A soma dos valores é'+ s.toString()) ou
+        //window.alert('A soma dos valores é'+ String(s))  
+    </script>
+</body>
+</html>

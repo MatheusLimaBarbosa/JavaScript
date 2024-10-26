@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <h1>Descobrindo seu pais</h1>
+    De qual pais você é? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"> 
+    
+    </div>
+    <script>
+        function calcular() {
+            var pais = window.document.querySelector('input#txtpais')
+            var real = pais.value
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = ("Seu pais é: "+ real)
+        }
+    </script>
+</body>
+</html>
